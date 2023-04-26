@@ -1,0 +1,15 @@
+﻿<Window x:Class="Aplikacja_do_treningu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplikacja_do_treningu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid Background="#343434">
+        <Label x:Name="Label1" Content="Wybierz rodzaj treningu:" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" Height="217" Width="464" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" RenderTransformOrigin="0.49,0.52" Foreground="White"/>
+        <Label x:Name="Label2" Content="Siłowy" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top" Foreground="White" FontSize="72" RenderTransformOrigin="0.237,-0.111" FlowDirection="RightToLeft" MouseDown="label_MouseDown"/>
+
+
+    </Grid>
+</Window>
