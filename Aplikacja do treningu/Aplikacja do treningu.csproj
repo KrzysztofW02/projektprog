@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Aplikacja_do_treningu</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="plank.png" />
+    <None Remove="Rozpocznij.png" />
+    <None Remove="start.png" />
+    <None Remove="stop.png" />
+    <None Remove="zakoncz.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="plank.png" />
+    <Resource Include="Rozpocznij.png" />
+    <Resource Include="start.png" />
+    <Resource Include="stop.png" />
+    <Resource Include="zakoncz.png" />
+  </ItemGroup>
+
+</Project>
