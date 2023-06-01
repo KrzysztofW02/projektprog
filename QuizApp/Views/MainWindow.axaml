@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:QuizApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="QuizApp.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="QuizApp"
+	    Width="1100"
+	    Height="500">
+
+	<Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+   <Grid Background="#343434">
+        <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" Foreground="White" FontSize="32"/>
+	   <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,200,0,0">
+		   <Button Content="Matematyka" Command="{Binding OpenMatematykaCommand}"  Width="300" Height="50" FontSize="32" Background="#343434" Foreground="BlueViolet" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+	   </StackPanel>
+	   <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="50,200,50,0">
+		   <Button Content="Informatyka" Command="{Binding OpenInformatykaCommand}"  Width="300" Height="50" FontSize="32" Background="#343434" Foreground="Blue" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+	   </StackPanel>
+   </Grid>
+</Window>
